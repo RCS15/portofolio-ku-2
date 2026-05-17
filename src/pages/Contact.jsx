@@ -1,75 +1,69 @@
 import SpotlightCard from '@/components/SpotlightCard';
 import { FaWhatsapp, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-import BorderGlow from '@/components/BorderGlow';
+// import { MdEmail } from 'react-icons/md';
+// import BorderGlow from '@/components/BorderGlow';
 
 export default function Contact() {
     return (
-        <div className="min-h-screen bg-black flex flex-col justify-center items-center py-20">
-            <div className='flex flex-col w-full max-w-2xl px-10'>
-                <p className='font-bold text-2xl text-white text-center mb-8 uppercase tracking-widest'>Tertarik bekerjasama dengan saya?</p>
-                
 
-                <BorderGlow
-                edgeSensitivity={30}
-                glowColor="40 80 80"
-                backgroundColor="#120F17"
-                borderRadius={28}
-                glowRadius={40}
-                glowIntensity={1}
-                coneSpread={25}
-                animated={false}
-                colors={['#ffffff', '#ffffff', '#ffffff']}
-                >
-                    {/* spotlight */}
-                    <SpotlightCard className="min-h-[400px] flex flex-col justify-between" spotlightColor="rgba(255, 255, 255, 0.15)">
-                        <div className="flex flex-col gap-6">
-                            <h2 className="text-3xl font-extrabold text-gray-400 hover:text-white mb-4 transition-all duration-200">Mari Bicara!</h2>
-                            <p className="text-gray-500 hover:text-white mb-4 transition-all duration-200text-lg leading-relaxed">
-                                Saya selalu terbuka untuk proyek baru, ide-ide kreatif, atau peluang untuk menjadi bagian dari visi Anda.
-                            </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
-                            {/* Email */}
-                            <a href="mailto:rifki@example.com" className="flex items-center gap-4 group">
-                                <div className="p-3 rounded-xl bg-neutral-800 text-white group-hover:bg-white group-hover:text-red-500 transition-all duration-300">
-                                    <MdEmail size={28} />
-                                </div>
-                                <div>
-                                    <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Email</p>
-                                    <p className="text-white font-medium">rifki@example.com</p>
-                                </div>
-                            </a>
-
-                            {/* WhatsApp */}
-                            <a href="https://wa.me/628123456789" className="flex items-center gap-4 group">
-                                <div className="p-3 rounded-xl bg-neutral-800 text-white group-hover:bg-green-500 group-hover:text-white transition-all duration-300">
-                                    <FaWhatsapp size={28} />
-                                </div>
-                                <div>
-                                    <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">WhatsApp</p>
-                                    <p className="text-white font-medium">+62 812-3456-789</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div className="flex flex-wrap gap-8 pt-8 border-t border-neutral-800">
-                            <a href="#" className="text-gray-400 hover:text-[#0A66C2] transition-colors flex items-center gap-2 text-lg">
-                                <FaLinkedinIn /> <span>LinkedIn</span>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-lg">
-                                <FaGithub /> <span>Github</span>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-[#DD2A7B] transition-colors flex items-center gap-2 text-lg">
-                                <FaInstagram /> <span>Instagram</span>
-                            </a>
-                        </div>
-                    </SpotlightCard>
-                </BorderGlow>
-                <p className="text-center text-gray-600 mt-10 text-sm">
-                    © 2026 Rifki Cahya Septiawan. All rights reserved.
+        <div className='grid grid-cols-1 xl:grid-cols-2 min-h-screen w-full p-10 bg-black'>
+            <div className='flex flex-col justify-center gap-3 p-5'>
+                {/* bagian kiri */}
+                <span className="text-sky-400 text-sm font-semibold tracking-widest uppercase">GET IN TOUCH</span>
+                <h1 className="text-7xl font-extrabold text-white leading-none ">
+                    LET'S START SOMETHING NEW
+                </h1>
+                <p className="text-gray-400 leading-relaxed max-w-xl text-justify mt-4 text-lg">
+                    Saya selalu terbuka untuk kolaborasi proyek, peluang baru, atau sekedar bertukar pikiran tenang tren reknologi web. Hubungi saya melalui salah satu media berikut..
                 </p>
+                <div className='flex items-center gap-5 mt-10'>
+                    <a href="" className='group flex items-center gap-2 text-white border border-white/20 rounded-full px-6 py-3 font-semibold hover:border-[#0A66C2] hover:bg-[#0A66C2]/10 hover:text-[#0A66C2] hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(10,102,194,0.3)] transition-all duration-300 active:scale-95'>
+                        <FaLinkedinIn className='text-slate-300 group-hover:text-[#0A66C2] transition-colors duration-300' />
+                        <span className='transition-colors duration-300'>LinkedIn</span>
+                    </a>
+                    <a href="" className='group flex items-center gap-2 text-white border border-white/20 rounded-full px-6 py-3 font-semibold hover:border-white hover:bg-white/10 hover:text-white hover:scale-105 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 active:scale-95'>
+                        <FaGithub className='text-slate-300 group-hover:text-white transition-colors duration-300' />
+                        <span className='transition-colors duration-300'>GitHub</span>
+                    </a>
+                    <a href="" className='group flex items-center gap-2 text-white border border-white/20 rounded-full px-6 py-3 font-semibold hover:border-[#E1306C] hover:bg-[#E1306C]/10 hover:text-[#E1306C] hover:scale-105 hover:shadow-[0_0_15px_rgba(225,48,108,0.3)] transition-all duration-300 active:scale-95'>
+                        <FaInstagram className='text-slate-300 group-hover:text-[#E1306C] transition-colors duration-300' />
+                        <span className='transition-colors duration-300'>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div className='flex justify-center p-5'>
+                {/* bagian kanan */}
+                <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                    <div className='text-white'>
+                        <span>AVAILABLE FOR NEW PROJECT</span>
+                        <h1>Mari Bicara</h1>
+                        <p className='text-lg'>
+                            Hubungi saya kapan saja untuk mendiskusikan peluang proyek baru tawaran kerja, atau sekedar menyapa
+                        </p>
+                        <div>
+                            <div>
+                                <span>ikon</span>
+                            </div>
+                            <div className='text-white'>
+                                <span>Email</span>
+                                <span>rifkicahya@gmail.com</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span>ikon</span>
+                            </div>
+                            <div>
+                                <span>WhatsApp</span>
+                                <span>087811234</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Jawa tengah</span>
+                            <span>Copy Email</span>
+                        </div>
+                    </div>
+                </SpotlightCard>
             </div>
         </div>
     )

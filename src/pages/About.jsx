@@ -29,7 +29,7 @@ export default function About()
                     />
                 </div>
 
-                                {/* Text Content Block */}
+                {/* Text Content Block */}
                 <div className="flex flex-col gap-6 lg:w-[55%] w-full text-left">
                     <div className="flex flex-col gap-2">
                         <span className="text-sky-400 text-sm font-semibold tracking-widest uppercase">ABOUT ME</span>
