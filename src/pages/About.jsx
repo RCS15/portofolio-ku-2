@@ -9,8 +9,27 @@ export default function About()
             <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] rounded-full bg-violet-500/10 blur-[120px] pointer-events-none" />
 
             <div className="relative z-10 max-w-7xl w-full mx-auto px-6 sm:px-12 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-                
-                {/* Text Content Block */}
+
+                {/* Profile Card Block */}
+                <div className="flex items-center justify-center lg:w-[40%] w-full max-w-[360px] sm:max-w-[400px] lg:max-w-none mx-auto">
+                    <ProfileCard
+                        name="Rifki Cahya Septiawan"
+                        title="Fullstack Developer"
+                        handle="rifkicahya"
+                        status="Online"
+                        contactText="Contact Me"
+                        avatarUrl="/img/profil-saya2.png"
+                        showUserInfo
+                        enableTilt={true}
+                        enableMobileTilt={false}
+                        onContactClick={() => console.log('Contact clicked')}
+                        behindGlowColor="rgba(56, 189, 248, 0.4)"
+                        behindGlowEnabled
+                        innerGradient="linear-gradient(145deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%)"
+                    />
+                </div>
+
+                                {/* Text Content Block */}
                 <div className="flex flex-col gap-6 lg:w-[55%] w-full text-left">
                     <div className="flex flex-col gap-2">
                         <span className="text-sky-400 text-sm font-semibold tracking-widest uppercase">ABOUT ME</span>
@@ -40,25 +59,6 @@ export default function About()
                             PROJECT
                         </button>
                     </div>
-                </div>
-
-                {/* Profile Card Block */}
-                <div className="flex items-center justify-center lg:w-[40%] w-full max-w-[360px] sm:max-w-[400px] lg:max-w-none mx-auto">
-                    <ProfileCard
-                        name="Rifki Cahya Septiawan"
-                        title="Fullstack Developer"
-                        handle="rifkicahya"
-                        status="Online"
-                        contactText="Contact Me"
-                        avatarUrl="/img/profil-saya2.png"
-                        showUserInfo
-                        enableTilt={true}
-                        enableMobileTilt={false}
-                        onContactClick={() => console.log('Contact clicked')}
-                        behindGlowColor="rgba(56, 189, 248, 0.4)"
-                        behindGlowEnabled
-                        innerGradient="linear-gradient(145deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%)"
-                    />
                 </div>
 
             </div>
