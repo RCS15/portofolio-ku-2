@@ -9,7 +9,7 @@ export default function Hero () {
 
     return (
         <section className="relative w-full h-screen overflow-hidden">
-            <div style={{ width: '100%', height: '600px', position: 'absolute', zIndex: '-99' }}>
+            <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-99' }}>
                 <div className="absolute inset-0 z-0">
                     <Particles
                         particleColors={["#ffffff"]}

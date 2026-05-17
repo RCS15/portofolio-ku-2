@@ -4,7 +4,7 @@ export default function Home()
     return (
         <div className="bg-black min-h-screen w-full relative">
             <div className="flex flex-col pt-20 p-5 sm:p-10 gap-2">
-                <div className=" text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold" >
+                <div className="flex flex-col text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-[1.1]" >
                     <h1 className="text-white">FULLSTACK</h1>
                     <h1 className="text-gray-500">DEVELOPER</h1>
                 </div>
