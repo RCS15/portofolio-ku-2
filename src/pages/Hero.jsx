@@ -1,4 +1,3 @@
-import Particles from "@/components/Particles";
 import SplitText from "@/components/SplitText";
 
 export default function Hero () {
@@ -8,21 +7,7 @@ export default function Hero () {
     };
 
     return (
-        <section className="relative w-full h-screen overflow-hidden bg-black flex items-center justify-center">
-            {/* Particle Background */}
-            <div className="absolute inset-0 z-0">
-                <Particles
-                    particleColors={["#ffffff", "#38bdf8", "#8b5cf6"]}
-                    particleCount={600}
-                    particleSpread={10}
-                    speed={0.2}
-                    particleBaseSize={100}
-                    moveParticlesOnHover
-                    alphaParticles
-                    disableRotation={false}
-                    pixelRatio="4"
-                />
-            </div>
+        <section className="relative w-full h-screen overflow-hidden bg-transparent flex items-center justify-center">
 
             {/* Glowing Depth Orbs */}
             <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-sky-500/10 rounded-full blur-[100px] pointer-events-none z-0"></div>
@@ -88,7 +73,6 @@ export default function Hero () {
                 </div>
 
             </div>
-
 
         </section>
     )
