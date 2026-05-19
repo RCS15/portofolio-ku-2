@@ -7,7 +7,7 @@ export default function Hero () {
     };
 
     return (
-        <section className="relative w-full h-screen overflow-hidden bg-transparent flex items-center justify-center">
+        <section id="hero" className="relative w-full h-screen overflow-hidden bg-transparent flex items-center justify-center">
 
             {/* Glowing Depth Orbs */}
             <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-sky-500/10 rounded-full blur-[100px] pointer-events-none z-0"></div>

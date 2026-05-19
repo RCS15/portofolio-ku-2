@@ -27,7 +27,7 @@ export default function Skills(){
     ];
 
     return (
-        <section className="bg-transparent min-h-screen w-full relative flex items-center justify-center overflow-hidden py-24 px-6 lg:px-16">
+        <section id="skills" className="bg-transparent min-h-screen w-full relative flex items-center justify-center overflow-hidden py-24 px-6 lg:px-16">
             {/* Background Depth Glows */}
             <div className="absolute top-[-10%] left-[-10%] w-[350px] h-[350px] rounded-full bg-sky-500/10 blur-[120px] pointer-events-none z-0" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] rounded-full bg-violet-500/10 blur-[120px] pointer-events-none z-0" />

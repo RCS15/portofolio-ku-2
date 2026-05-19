@@ -3,7 +3,7 @@ import TextType from '@/components/TextType';
 
 export default function Home() {
   return (
-    <section className="bg-transparent min-h-screen w-full relative flex items-center justify-center overflow-hidden py-24 px-6 lg:px-16">
+    <section id="home" className="bg-transparent min-h-screen w-full relative flex items-center justify-center overflow-hidden py-24 px-6 lg:px-16">
       {/* Background Glows for Premium Aesthetics */}
       <div className="absolute top-[-10%] right-[-10%] w-[350px] h-[350px] rounded-full bg-sky-500/5 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-violet-500/5 blur-[120px] pointer-events-none" />

@@ -6,6 +6,7 @@ import Skills from "./pages/Skills"
 import Project from "./pages/Project"
 import Contact from "./pages/Contact"
 import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
 
       {/* Pages Container */}
       <div className="relative z-10">
+        <Navbar />
         <Hero />
         <Home />
         <About />

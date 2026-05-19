@@ -16,7 +16,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen w-full bg-transparent flex items-center px-6 lg:px-16">
+    <section id="contact" className="min-h-screen w-full bg-transparent flex items-center px-6 lg:px-16">
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-12 w-full">
 
         {/* LEFT SIDE */}

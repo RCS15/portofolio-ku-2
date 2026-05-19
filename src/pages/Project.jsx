@@ -43,7 +43,7 @@ export default function Project () {
     ];
 
     return (
-        <section className="bg-transparent min-h-screen w-full relative flex flex-col py-24 px-6 lg:px-16 overflow-hidden">
+        <section id="projects" className="bg-transparent min-h-screen w-full relative flex flex-col py-24 px-6 lg:px-16 overflow-hidden">
             {/* Background Glows */}
             <div className="absolute top-[10%] right-[-5%] w-[400px] h-[400px] rounded-full bg-sky-500/10 blur-[120px] pointer-events-none z-0" />
             <div className="absolute bottom-[10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-violet-500/10 blur-[120px] pointer-events-none z-0" />
