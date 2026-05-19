@@ -1,4 +1,5 @@
 import SpotlightCard from '@/components/SpotlightCard';
+import TextType from '@/components/TextType';
 
 export default function Home() {
   return (
@@ -25,8 +26,20 @@ export default function Home() {
             <h1 className="bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 bg-clip-text text-transparent">DEVELOPER</h1>
           </div>
 
-          <span className="text-sky-400 text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mt-6 pl-1">
-            FRESH GRADUATE
+          <span className="text-sky-400 text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mt-6 pl-1 block min-h-[24px]">
+            <TextType 
+              text={[
+                "FRESH GRADUATE", 
+                "FRONTEND ENTHUSIAST", 
+                "CREATIVE DEVELOPER"
+              ]}
+              typingSpeed={50}
+              deletingSpeed={30}
+              pauseDuration={2000}
+              showCursor={true}
+              cursorCharacter="|"
+              cursorBlinkDuration={0.5}
+            />
           </span>
 
           <p className="text-gray-400 text-base md:text-lg leading-relaxed mt-6 max-w-xl text-justify pl-1">
