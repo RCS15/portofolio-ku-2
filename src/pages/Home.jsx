@@ -1,3 +1,4 @@
+import SpotlightCard from '@/components/SpotlightCard';
 
 export default function Home() {
   return (
@@ -35,7 +36,10 @@ export default function Home() {
 
         {/* RIGHT COLUMN - CAPABILITIES CARD */}
         <div className="flex justify-center lg:justify-end">
-          <div className="w-full max-w-md rounded-[32px] border border-white/10 bg-white/[0.02] backdrop-blur-xl p-8 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.03]">
+        <SpotlightCard
+            className="w-full max-w-md rounded-[32px] border border-white/10 bg-white/[0.02] backdrop-blur-xl p-8 transition-all duration-300 hover:border-white/20 hover:bg-white/[0.03]"
+            spotlightColor="rgba(255,255,255,0.15)"
+        >
             <h3 className="text-white font-semibold tracking-wider text-xl border-b border-white/10 pb-4 mb-6">
               System Architecture & Logic
             </h3>
@@ -79,7 +83,7 @@ export default function Home() {
               <span>Performance Focused</span>
               <span>Clean Code Compliant</span>
             </div>
-          </div>
+        </SpotlightCard>
         </div>
 
       </div>
